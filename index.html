@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthPulse | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">♥</div>
+            <span>Health<span>Pulse</span></span>
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">⌂ <span>Dashboard</span></a>
+            <a href="appointments.html">▣ <span>Appointments</span></a>
+            <a href="referrals.html">↗ <span>Referrals</span></a>
+            <a href="records.html">▤ <span>Health Records</span></a>
+            <a href="assistant.html">✦ <span>AI Assistant</span></a>
+            <a href="profile.html">◎ <span>Profile</span></a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="help-box">
+                <div>Need help?</div>
+                <small>Our support team is available 24/7.</small>
+                <button>Contact Support</button>
+            </div>
+        </div>
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <h1>Good afternoon, Mukta 👋</h1>
+                <p>Here's your health overview for today.</p>
+            </div>
+
+            <div class="user-area">
+                <div class="notification">♢</div>
+                <div class="avatar">M</div>
+            </div>
+        </header>
+
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="stat-icon red">♥</div>
+                <div>
+                    <span>Heart Rate</span>
+                    <strong>72 <small>BPM</small></strong>
+                </div>
+                <div class="status good">Normal</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon blue">◉</div>
+                <div>
+                    <span>Blood Pressure</span>
+                    <strong>118/76 <small>mmHg</small></strong>
+                </div>
+                <div class="status good">Normal</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">◒</div>
+                <div>
+                    <span>Daily Steps</span>
+                    <strong>6,842</strong>
+                </div>
+                <div class="status">68%</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon purple">◷</div>
+                <div>
+                    <span>Sleep</span>
+                    <strong>7h 42m</strong>
+                </div>
+                <div class="status good">Good</div>
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-grid">
+
+            <div class="card appointments-card">
+
+                <div class="card-header">
+                    <div>
+                        <h2>Upcoming Appointment</h2>
+                        <p>Your next scheduled consultation</p>
+                    </div>
+                    <a href="appointments.html">View all →</a>
+                </div>
+
+                <div class="appointment-main">
+
+                    <div class="doctor-avatar">👩‍⚕️</div>
+
+                    <div class="doctor-info">
+                        <h3>Dr. Ananya Sharma</h3>
+                        <p>Cardiologist</p>
+                        <div class="appointment-details">
+                            <span>📅 20 Aug 2026</span>
+                            <span>⏰ 10:30 AM</span>
+                            <span>📍 Apollo Hospital</span>
+                        </div>
+                    </div>
+
+                    <button class="primary-btn">View Details</button>
+
+                </div>
+
+            </div>
+
+
+            <div class="card health-score">
+
+                <div class="card-header">
+                    <div>
+                        <h2>Health Score</h2>
+                        <p>Based on your recent data</p>
+                    </div>
+                </div>
+
+                <div class="score-container">
+                    <div class="score-circle">
+                        <div>
+                            <strong>86</strong>
+                            <span>/100</span>
+                        </div>
+                    </div>
+
+                    <div class="score-text">
+                        <h3>Excellent</h3>
+                        <p>Your health indicators are looking good.</p>
+                        <span class="up">↑ 4% this month</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="card referral-card">
+
+                <div class="card-header">
+                    <div>
+                        <h2>Active Referral</h2>
+                        <p>Hospital referral status</p>
+                    </div>
+                    <span class="badge pending">Pending</span>
+                </div>
+
+                <div class="referral-content">
+
+                    <div class="referral-icon">↗</div>
+
+                    <div>
+                        <h3>Specialist Consultation</h3>
+                        <p>Referral ID: HP-2026-0842</p>
+                        <small>Created on 17 Aug 2026</small>
+                    </div>
+
+                </div>
+
+                <div class="progress">
+                    <div></div>
+                </div>
+
+                <div class="progress-labels">
+                    <span>Requested</span>
+                    <span>Under Review</span>
+                    <span>Approved</span>
+                </div>
+
+            </div>
+
+
+            <div class="card ai-card">
+
+                <div class="ai-header">
+                    <div class="ai-icon">✦</div>
+                    <div>
+                        <h2>HealthPulse AI</h2>
+                        <p>Your personal health assistant</p>
+                    </div>
+                </div>
+
+                <div class="ai-message">
+                    <p>👋 Hi! I can help you understand your health records, appointments, referrals and more.</p>
+                </div>
+
+                <a href="assistant.html" class="ai-btn">
+                    Talk to AI Assistant →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="card activity">
+
+            <div class="card-header">
+                <div>
+                    <h2>Recent Activity</h2>
+                    <p>Your latest health activity</p>
+                </div>
+                <a href="records.html">View records →</a>
+            </div>
+
+            <div class="activity-list">
+
+                <div class="activity-item">
+                    <div class="activity-icon blue">▤</div>
+                    <div>
+                        <strong>Blood Test Report Added</strong>
+                        <p>Uploaded by Apollo Hospital</p>
+                    </div>
+                    <span>Today, 11:20 AM</span>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon green">✓</div>
+                    <div>
+                        <strong>Appointment Confirmed</strong>
+                        <p>Dr. Ananya Sharma</p>
+                    </div>
+                    <span>Yesterday</span>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon purple">↗</div>
+                    <div>
+                        <strong>Referral Created</strong>
+                        <p>Specialist consultation request</p>
+                    </div>
+                    <span>17 Aug 2026</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
